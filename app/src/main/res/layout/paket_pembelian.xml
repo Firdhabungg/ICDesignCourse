@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+
+    <!-- Header Yaaaa Bro -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:padding="25dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan Paket"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/rekomendasiSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Siapkan dirimu belajar lebih banyak materi dan metode pembelajaran premium hanya di ICDesign! Gunakan promo awal tahun guna menambah skill desain kamu sekarang!"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout" />
+
+    <!-- Beginner -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/beginnerCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#D9F1CB"
+        android:padding="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/rekomendasiSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0">
+
+        <TextView
+            android:id="@+id/beginnerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/beginnerTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorite"
+            android:background="#71B462"
+            android:textColor="#FFFFFF"
+            android:padding="4dp"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/beginnerPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 300.000"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/beginnerTitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/beginnerDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cocok bagi pemula yang ingin belajar tentang desain. Paket ini memberikan akses ke modul pembelajaran dengan materi-materi penting dan beberapa kuis untuk melatih pemahaman awal."
+            android:textColor="#444444"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/beginnerPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Intermediate -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/intermediateCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFF4CC"
+        android:padding="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_goneMarginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/beginnerCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/intermediateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intermediate"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/intermediateTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOT"
+            android:background="#F1A94E"
+            android:textColor="#FFFFFF"
+            android:padding="4dp"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/intermediatePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 500.000"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/intermediateTitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/intermediateDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ideal bagi pengguna dengan pengetahuan dasar yang ingin mendalami keterampilan desain. Mencakup akses lebih banyak modul lanjutan dan kuis interaktif untuk menguji kemampuan desain dengan lebih intensif."
+            android:textColor="#444444"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/intermediatePrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- High Level -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/highLevelCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#EAD8F3"
+        android:padding="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_goneMarginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/intermediateCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/highLevelTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Level"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/highLevelTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOOD"
+            android:background="#9672A6"
+            android:textColor="#FFFFFF"
+            android:padding="4dp"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/highLevelPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 1.000.000"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/highLevelTag"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/highLevelDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pilihan terbaik untuk profesional atau ingin menguasai desain secara mendalam. Mendapatkan akses penuh ke semua modul premium dan kuis tingkat tinggi untuk meningkatkan keterampilan secara maksimal."
+            android:textColor="#444444"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/highLevelPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Navigasi -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/softpurple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtMenuBeranda"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/beranda"
+            android:text="Beranda"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtMenuPembelian"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/cart"
+            android:padding="5dp"
+            android:text="Pembelian"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtMenuAkun"
+            app:layout_constraintStart_toEndOf="@+id/txtMenuBeranda"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtMenuAkun"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/akun"
+            android:padding="5dp"
+            android:text="Akun"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
