@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F9F9F9">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PaketFragment">
 
-    <!-- Header Yaaaa Bro -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headerLayout"
         android:layout_width="match_parent"
@@ -41,7 +40,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/headerLayout" />
 
-    <!-- Beginner -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/beginnerCard"
         android:layout_width="0dp"
@@ -224,58 +222,6 @@
             app:layout_constraintTop_toBottomOf="@id/highLevelPrice"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- Navigasi -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/consLayout"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/softpurple"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/txtMenuBeranda"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:drawableTop="@drawable/beranda"
-            android:text="Beranda"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:padding="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txtMenuPembelian"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:drawableTop="@drawable/cart"
-            android:padding="5dp"
-            android:text="Pembelian"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/txtMenuAkun"
-            app:layout_constraintStart_toEndOf="@+id/txtMenuBeranda"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txtMenuAkun"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:drawableTop="@drawable/akun"
-            android:padding="5dp"
-            android:text="Akun"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

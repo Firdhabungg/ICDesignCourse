@@ -38,4 +38,6 @@
     <string name="cocok_bagi_pemula_yang_ingin_belajar_tentang_desain_paket_ini_memberikan_akses_ke_modul_pembelajaran_dengan_materi_materi_penting_dan_beberapa_kuis_untuk_melatih_pemahaman_awal">Cocok bagi pemula yang ingin belajar tentang desain. Paket ini memberikan akses ke modul pembelajaran dengan materi-materi penting dan beberapa kuis untuk melatih pemahaman awal.</string>
     <string name="intermediate">Intermediate</string>
     <string name="good">GOOD</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
