@@ -30,4 +30,12 @@
     <string name="role_mu">Role mu sebagai apa ?</string>
     <string name="lengkapi_profil">Lengkapi Profilmu Dulu Yuk !</string>
     <string name="nologin">noLogin</string>
+    <string name="pilihan_paket">Pilihan Paket</string>
+    <string name="siapkan_dirimu_belajar_lebih_banyak_materi_dan_metode_pembelajaran_premium_hanya_di_icdesign_gunakan_promo_awal_tahun_guna_menambah_skill_desain_kamu_sekarang">Siapkan dirimu belajar lebih banyak materi dan metode pembelajaran premium hanya di ICDesign! Gunakan promo awal tahun guna menambah skill desain kamu sekarang!</string>
+    <string name="beginner">Beginner</string>
+    <string name="favorite">Favorite</string>
+    <string name="rp_300_000">Rp. 300.000</string>
+    <string name="cocok_bagi_pemula_yang_ingin_belajar_tentang_desain_paket_ini_memberikan_akses_ke_modul_pembelajaran_dengan_materi_materi_penting_dan_beberapa_kuis_untuk_melatih_pemahaman_awal">Cocok bagi pemula yang ingin belajar tentang desain. Paket ini memberikan akses ke modul pembelajaran dengan materi-materi penting dan beberapa kuis untuk melatih pemahaman awal.</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="good">GOOD</string>
 </resources>
