@@ -3,24 +3,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9F9F9">
 
-    <!-- Header Yaaaa Bro -->
-
-
+    <!-- Fragment Container -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         android:name="com.example.icdesigncourse.PaketFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/rekomendasiSubtitle"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- Beginner -->
-
 
     <!-- Navigasi -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,49 +24,49 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/softpurple"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
             android:id="@+id/txtMenuBeranda"
-            android:layout_width="150dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/beranda"
             android:text="Beranda"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:padding="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.33"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
         <TextView
             android:id="@+id/txtMenuPembelian"
-            android:layout_width="150dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/cart"
-            android:padding="5dp"
             android:text="Pembelian"
             android:textAlignment="center"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/txtMenuAkun"
-            app:layout_constraintStart_toEndOf="@+id/txtMenuBeranda"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:padding="5dp"
+            app:layout_constraintWidth_percent="0.33"
+            app:layout_constraintStart_toEndOf="@id/txtMenuBeranda"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
         <TextView
             android:id="@+id/txtMenuAkun"
-            android:layout_width="150dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:drawableTop="@drawable/akun"
-            android:padding="5dp"
             android:text="Akun"
             android:textAlignment="center"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:padding="5dp"
+            app:layout_constraintWidth_percent="0.33"
+            app:layout_constraintStart_toEndOf="@id/txtMenuPembelian"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

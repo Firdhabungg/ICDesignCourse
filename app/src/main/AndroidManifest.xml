@@ -17,7 +17,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".paket_course"
+            android:name=".Paket_course"
             android:exported="false" />
         <activity
             android:name=".MenuRegister"

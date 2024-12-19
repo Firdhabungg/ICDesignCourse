@@ -1,5 +1,6 @@
 package com.example.icdesigncourse
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -9,13 +10,14 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentContainerView
 
-class paket_course : AppCompatActivity() {
+class Paket_course : AppCompatActivity() {
     private fun replaceFragment(fragment: Fragment){
         val fragmentManager = supportFragmentManager
         val fragmentTrx = fragmentManager.beginTransaction()
         fragmentTrx.replace(R.id.fragmentContainerView, fragment)
         fragmentTrx.commit()
     }
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_display_menu"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:contentPadding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textClassPaket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/beginner"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textHargaPaket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="5dp"
+            android:text="Rp. 300.000"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textClassPaket" />
+
+        <TextView
+            android:id="@+id/textDeskripsi"
+            android:layout_width="330dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="16dp"
+            android:padding="4dp"
+            android:text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae similique ipsum fugiat ut tempora harum vitae vel fugit! Iusto  inventore impedit itaque, eos deleniti facilis excepturi laborum ut placeat illo dolorem, dolor odio, commodi minus id molestias? Amet nam magnam vero nostrum deleniti vel quam optio, odit velit! Beatae dolore."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textHargaPaket" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
