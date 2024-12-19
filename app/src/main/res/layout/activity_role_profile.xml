@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="147dp"
         android:contentDescription="@string/nologin"
+               main
         app:srcCompat="@drawable/banner1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
@@ -22,7 +23,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
+        android:text="Lengkapi Profilmu Dulu Yuk !"
         android:text="@string/lengkapi_profil"
+              main
         android:textColor="#2F2E41"
         android:fontFamily="@font/poppins"
         android:textSize="24sp"
@@ -36,7 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/role_mu"
+        android:text="Role mu sebagai apa ?"
+        android:text="@string/role_mu" 
+        main
         android:textColor="#2F2E41"
         android:fontFamily="@font/poppins"
         android:textSize="16sp"
@@ -50,7 +55,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:text="Mentor"
         android:text="@string/mentor"
+              main
         android:textColor="#2F2E41"
         android:textSize="12sp"
         android:fontFamily="@font/poppins"
@@ -65,6 +72,7 @@
         android:layout_height="75dp"
         android:layout_marginTop="8dp"
         android:contentDescription="Mentor"
+               main
         android:src="@drawable/women"
         app:layout_constraintEnd_toStartOf="@id/student_icon"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +83,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:text="Student"
         android:text="@string/student"
+              main
         android:fontFamily="@font/poppins"
         android:textColor="#2F2E41"
         android:textSize="12sp"
@@ -99,7 +109,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:text="Mau belajar di kelas apa ?"
         android:text="@string/nanya_kelas"
+              main
         android:fontFamily="@font/poppins"
         android:textColor="#2F2E41"
         android:textSize="16sp"
@@ -113,7 +125,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:text="Desain Grafis"
         android:text="@string/desain_grafis"
+              main
         android:textColor="#2F2E41"
         android:fontFamily="@font/poppins"
         android:textSize="12sp"
@@ -137,7 +151,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:text="Desain UI/UX"
         android:text="@string/dsn_ui_ux"
+              main
         android:textColor="#2F2E41"
         android:fontFamily="@font/poppins"
         android:textStyle="bold"
@@ -167,7 +183,9 @@
         android:layout_marginEnd="40dp"
         android:backgroundTint="@color/ungu_muda"
         android:fontFamily="@font/poppins_bold"
+        android:hint="@string/Lanjut"
         android:hint="@string/lanjut"
+            main
         android:textColorHint="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
