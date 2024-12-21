@@ -18,15 +18,17 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val btnMasuk = findViewById<Button>(R.id.btnMasuk)
+        btnMasuk.setOnClickListener {
+//            Button login diklik maka akan ke menu login
+            val intentLogin = Intent(this, MenuLogin::class.java)
+            startActivity(intentLogin)
+        }
         val btnDaftar = findViewById<Button>(R.id.btnDaftar)
         btnDaftar.setOnClickListener {
-            val regis = Intent(this, MenuRegister::class.java)
-            startActivity(regis)
-        }
-        val btnMasuk = findViewById<Button>(R.id.btnMasukMain)
-        btnMasuk.setOnClickListener {
-            val login = Intent(this, MenuLogin::class.java)
-            startActivity(login)
+            val intentRegis = Intent(this, MenuRegister::class.java)
+            startActivity(intentRegis)
         }
     }
 }
