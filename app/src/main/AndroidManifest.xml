@@ -17,8 +17,17 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".DetailPaketHigh"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPaketIntermediate"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPaketBeginner"
+            android:exported="false" />
+        <activity
             android:name=".Paket_course"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".MenuRegister"
             android:exported="false" />
@@ -30,7 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

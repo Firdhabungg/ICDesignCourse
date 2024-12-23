@@ -98,9 +98,21 @@
             app:layout_constraintTop_toBottomOf="@id/beginnerPrice"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/beginnerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klik Disini"
+            android:textSize="14dp"
+            android:backgroundTint="#71B462"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/beginnerDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Intermediate -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/intermediateCard"
         android:layout_width="0dp"
@@ -160,6 +172,19 @@
             app:layout_constraintTop_toBottomOf="@id/intermediatePrice"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/intermediateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klik Disini"
+            android:backgroundTint="#F1A94E"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/intermediateDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="14dp"
+            android:layout_marginTop="8dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- High Level -->
@@ -222,6 +247,19 @@
             app:layout_constraintTop_toBottomOf="@id/highLevelPrice"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/highLevelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klik Disini"
+            android:backgroundTint="#9672A6"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@id/highLevelDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
