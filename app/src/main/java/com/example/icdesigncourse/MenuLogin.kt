@@ -1,9 +1,12 @@
 package com.example.icdesigncourse
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -62,5 +65,17 @@ class MenuLogin : AppCompatActivity() {
                     }
                 })
         }
+        val txtDaftar = findViewById<TextView>(R.id.txtDaftarSkrng)
+        txtDaftar.setOnClickListener {
+            val intentDaftar = Intent(this@MenuLogin, MenuRegister::class.java)
+            startActivity(intentDaftar)
+        }
+//        intent implicit
+        val btnGoogle = findViewById<ImageView>(R.id.btnGoogle)
+        btnGoogle.setOnClickListener {
+            val intentGoogle = Intent(Intent.ACTION_VIEW, Uri.parse("https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=AddSession"))
+            startActivity(intentGoogle)
+        }
+
     }
 }

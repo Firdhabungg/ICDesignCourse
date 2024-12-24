@@ -1,5 +1,7 @@
 package com.example.icdesigncourse
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -9,13 +11,14 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentContainerView
 
-class paket_course : AppCompatActivity() {
+class Paket_course : AppCompatActivity() {
     private fun replaceFragment(fragment: Fragment){
         val fragmentManager = supportFragmentManager
         val fragmentTrx = fragmentManager.beginTransaction()
         fragmentTrx.replace(R.id.fragmentContainerView, fragment)
         fragmentTrx.commit()
     }
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -40,6 +43,24 @@ class paket_course : AppCompatActivity() {
 
         txtMenuAkun.setOnClickListener{
             replaceFragment(MenuAkun())
+        }
+
+        val txtBeginner = findViewById<TextView>(R.id.beginnerButton)
+        txtBeginner.setOnClickListener {
+            val intentBeginner = Intent(this@Paket_course, DetailPaketBeginner::class.java)
+            startActivity(intentBeginner)
+        }
+
+        val txtIntermediate = findViewById<TextView>(R.id.intermediateButton)
+        txtIntermediate.setOnClickListener {
+            val intentIntermediate = Intent(this@Paket_course, DetailPaketIntermediate::class.java)
+            startActivity(intentIntermediate)
+        }
+
+        val txtHighLevel = findViewById<TextView>(R.id.highLevelButton)
+        txtHighLevel.setOnClickListener {
+            val intentHighLevel = Intent(this@Paket_course, DetailPaketHigh::class.java)
+            startActivity(intentHighLevel)
         }
     }
 }

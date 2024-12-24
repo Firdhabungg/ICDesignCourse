@@ -11,12 +11,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MenuRegister : AppCompatActivity() {
-//    data static
-    companion object {
-        var email = "firdha@gmail.com"
-        var namaLengkap = "dicky firmansyah"
-        var sandi = "1933"
-    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -29,15 +23,14 @@ class MenuRegister : AppCompatActivity() {
         val txtEmail:EditText = findViewById(R.id.editEmailR)
         val txtNamaLengkap:EditText = findViewById(R.id.editNamaR)
         val txtSandi:EditText = findViewById(R.id.editSandiR)
-        val btnDaftar = findViewById<Button>(R.id.buttonDaftarR)
+        val btnDaftar = findViewById<Button>(R.id.buttonDaftar)
         btnDaftar.setOnClickListener {
-            if(txtEmail.text.toString().equals(email) &&
-                txtNamaLengkap.text.toString().equals(namaLengkap) && txtSandi.text.toString().equals(
-                    sandi)) {
-                val regis = Intent(this, MenuRegister::class.java)
-                startActivity(regis)
+            if(txtEmail.text.isNotEmpty() && txtNamaLengkap.text.isNotEmpty() && txtSandi.text.isNotEmpty())  {
+                val register = Intent(this, MenuLogin::class.java)
+                Toast.makeText(this, "Registrasi Akun berhasil", Toast.LENGTH_SHORT).show()
+                startActivity(register)
             }else {
-                Toast.makeText(this, "Email atau kata sandi salah", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Lengkapi registrasi anda", Toast.LENGTH_SHORT).show()
             }
         }
     }
