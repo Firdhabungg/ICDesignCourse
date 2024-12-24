@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Lengkapi Profilmu Dulu Yuk!"
+        android:text="@string/lengkapi_profilmu_dulu_yuk"
         android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -146,12 +146,9 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/rectangle_ungu"
         android:fontFamily="@font/poppins"
-        android:hint="Kata Sandi"
-        android:drawableRight="@drawable/baseline_visibility_off_24"
-        android:paddingStart="10dp"
-        android:paddingTop="10dp"
-        android:paddingEnd="10dp"
-        android:paddingBottom="10dp"
+        android:hint="@string/kata_sandi"
+        android:drawableEnd="@drawable/baseline_visibility_off_24"
+        android:padding="10dp"
         android:textColorHint="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -181,11 +178,8 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/rectangle_ungu"
         android:fontFamily="@font/poppins"
-        android:hint="level"
-        android:paddingStart="10dp"
-        android:paddingTop="10dp"
-        android:paddingEnd="10dp"
-        android:paddingBottom="10dp"
+        android:hint="@string/level"
+        android:padding="10dp"
         android:textColorHint="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -198,7 +192,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="24dp"
-        android:text="Foto Profil"
+        android:text="@string/foto_profil"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:textColor="@color/black"
@@ -206,25 +200,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <EditText
-        android:id="@+id/editProfil"
+    <Button
+        android:id="@+id/chooseFileButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/rectangle_ungu"
-        android:fontFamily="@font/poppins"
-        android:hint="Choose file"
-        android:paddingStart="10dp"
-        android:paddingTop="10dp"
-        android:paddingEnd="10dp"
-        android:paddingBottom="10dp"
-        android:textColorHint="@color/white"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textProfil"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textProfil" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/choose_file"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/softpurple"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
@@ -234,9 +221,9 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="40dp"
         android:fontFamily="@font/poppins"
-        android:backgroundTint="@color/ungu_muda"
+        android:backgroundTint="@color/black"
         android:textStyle="bold"
-        android:hint="Simpan"
+        android:hint="@string/simpan"
         android:paddingStart="10dp"
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
@@ -245,10 +232,5 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent "
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editProfil" />
-</androidx.constraintlayout.widget.ConstraintLayout>
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uiux_icon" />
-
+        app:layout_constraintTop_toBottomOf="@id/chooseFileButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

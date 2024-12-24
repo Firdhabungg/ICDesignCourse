@@ -53,7 +53,7 @@
         android:layout_marginEnd="40dp"
         android:fontFamily="@font/poppins"
         android:text="Nama Lengkap"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editEmailR" />
@@ -87,12 +87,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
         android:fontFamily="@font/poppins"
-        android:text="Kata Sandi"
-        android:textSize="16dp"
+        android:text="@string/kata_sandi"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNamaR" />
-
     <EditText
         android:id="@+id/editSandiR"
         android:layout_width="match_parent"
@@ -101,7 +100,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/rectangle_ungu"
-        android:drawableRight="@drawable/baseline_visibility_off_24"
+        android:drawableEnd="@drawable/baseline_visibility_off_24"
         android:fontFamily="@font/poppins"
         android:hint="@string/kata_sandi"
         android:paddingStart="15dp"
@@ -111,6 +110,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="14sp"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textSandiR" />
@@ -154,11 +154,12 @@
         android:id="@+id/imageView"
         android:layout_width="225dp"
         android:layout_height="237dp"
+        android:contentDescription="iconImage"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/login"
-        tools:ignore="MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteY="172dp" />
 
     <TextView

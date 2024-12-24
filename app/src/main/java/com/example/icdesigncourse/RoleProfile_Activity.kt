@@ -20,10 +20,9 @@ class RoleProfile_Activity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         val btnNavigate = findViewById<Button>(R.id.button)
         btnNavigate.setOnClickListener {
-            val intent = Intent(this, paket_course::class.java)
+            val intent = Intent(this, Paket_course::class.java)
             startActivity(intent)
         }
     }

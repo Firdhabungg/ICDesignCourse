@@ -15,7 +15,7 @@
         android:background="#9C27B0"
         android:gravity="center"
         android:padding="16dp"
-        android:text="Detail Paket"
+        android:text="@string/detail_paket"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -49,7 +49,7 @@
                 android:background="#9C27B0"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="4dp"
-                android:text="Intermediate"
+                android:text="@string/intermediate"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -60,17 +60,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Rp. 700.000"
+                android:text="@string/rp_700_000"
                 android:textColor="#9E9E9E"
-                android:textSize="12sp"
-                android:paintFlags="strikeThruText" />
+                android:textSize="12sp"/>
 
             <TextView
                 android:id="@+id/tv_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Rp. 500.000"
+                android:text="@string/rp_500_000"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -80,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Apa saja fasilitas yang akan di dapat?"
+                android:text="@string/apa_saja"
                 android:textColor="#000000"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -95,30 +94,30 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
-                    android:text="Akses ke Fitur Menengah"
+                    android:text="@string/akses_ke_fitur_menengah"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
-                    android:text="Ringkasan Materi Mendalam dari Mentor"
+                    android:text="@string/ringkasan_materi"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
-                    android:text="75 + Konten Premium Dengan Template Lebih Kompleks   "
+                    android:text="@string/_75_konten_premium"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -132,65 +131,65 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
-                    android:text="Belajar Melakukan Research yang Mendalam"
+                    android:text="@string/belajar_melakukan_research_yang_mendalam"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="@string/membuat_prototyping_tingkat_lanjut"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="@string/pembahasan_pengujian_dan_validasi"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
-                    android:text="Membuat Prototyping Tingkat Lanjut"
+                    android:text="@string/kuis_pembelajaran_interaktif"
                     android:textColor="#000000"
                     android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
-                    android:text="Pembahasan Pengujian dan Validasi Desain Dasar"
+                    android:text="@string/persiapan_portofolio"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
-                    android:text="Kuis Pembelajaran Interaktif yang Lebih Detail"
+                    android:text="@string/warna_tipografi"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
-                    android:text="Panduan Persiapan Portofolio Desain Awal"
+                    android:text="@string/pembuatan_portofolio"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
-                    android:drawablePadding="8dp"
-                    android:text="Panduan Tentang Warna, Tipografi, dan Hierarki Visual"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
-                    android:drawablePadding="8dp"
-                    android:text="Panduan Pembuatan Portofolio yang Rapi"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
 
 
             </LinearLayout>
@@ -201,20 +200,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:backgroundTint="#9C27B0"
-                android:text="Beli Paket Sekarang"
+                android:text="@string/beli_paket_sekarang"
                 android:textColor="#FFFFFF" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/btn_back"
-        android:layout_width="29dp"
-        android:layout_height="31dp"
-        android:layout_margin="16dp"
-        android:background="@drawable/rectangleputih"
-        android:contentDescription="Back"
-        android:src="@drawable/baseline_arrow_back_24"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

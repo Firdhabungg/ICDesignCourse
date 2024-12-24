@@ -53,8 +53,8 @@ class MenuLogin : AppCompatActivity() {
                     ) {
                         val akun = response.body()
                         if(akun?.success == true) {
-                            Toast.makeText(this@MenuLogin, akun.message.toString(), Toast.LENGTH_SHORT).show()
                             val intentLogin = Intent(this@MenuLogin, RoleProfile_Activity::class.java)
+                            Toast.makeText(this@MenuLogin, akun.message.toString(), Toast.LENGTH_SHORT).show()
                             startActivity(intentLogin)
                         }else {
                             Toast.makeText(this@MenuLogin, akun?.message,Toast.LENGTH_SHORT).show()

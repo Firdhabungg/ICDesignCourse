@@ -15,7 +15,7 @@
         android:background="#9C27B0"
         android:gravity="center"
         android:padding="16dp"
-        android:text="Detail Paket"
+        android:text="@string/detail_paket"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -49,7 +49,7 @@
                 android:background="#9C27B0"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="4dp"
-                android:text="Beginner"
+                android:text="@string/beginner"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -60,10 +60,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Rp. 500.000"
+                android:text="@string/rp_500_000"
                 android:textColor="#9E9E9E"
-                android:textSize="12sp"
-                android:paintFlags="strikeThruText" />
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/tv_price"
@@ -73,14 +72,15 @@
                 android:text="Rp. 300.000"
                 android:textColor="#000000"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <!-- Description -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Apa saja fasilitas yang akan di dapat?"
+                android:text="@string/apa_saja"
                 android:textColor="#000000"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -95,84 +95,85 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
-                    android:text="Akses ke Fitur Dasar"
+                    android:text="@string/akses_ke_fitur_dasar"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
 
                 <!-- Repeat this block for each feature -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
                     android:text="Dukungan prioritas"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="@string/ringkasan_materi"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="@string/_50_konten_premium"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="@string/memahami_konsep_dasar_research"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="@string/pengantar_interaction_design"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="@string/pengantar_pembuatan_paratyping"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="@string/kuis_pengantar"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:drawableStartCompat="@drawable/checklist" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/checklist"
                     android:drawablePadding="8dp"
-                    android:text="Ringkasan Materi Pengantar dari Penjelasan Mentor"
+                    android:text="@string/panduan_pengenalan"
                     android:textColor="#000000"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
-                    android:drawablePadding="8dp"
-                    android:text="50 + Konten Premium Beserta Template Sederhana"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
-                    android:drawablePadding="8dp"
-                    android:text="Memahami Konsep Dasar Research"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
-                    android:drawablePadding="8dp"
-                    android:text="Pengantar Interaction Design"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
-                    android:drawablePadding="8dp"
-                    android:text="Pengantar Pembuatan Paratyping"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
-                    android:drawablePadding="8dp"
-                    android:text="Kuis Pengantar Pembelajaran Desain Interaktif"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/checklist"
-                    android:drawablePadding="8dp"
-                    android:text="Panduan Pengenalan Desain UI/UX"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
 
 
             </LinearLayout>
@@ -183,7 +184,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:backgroundTint="#9C27B0"
-                android:text="Beli Paket Sekarang"
+                android:text="@string/beli_paket_sekarang"
                 android:textColor="#FFFFFF" />
 
         </LinearLayout>
@@ -195,8 +196,9 @@
         android:layout_height="31dp"
         android:layout_margin="16dp"
         android:background="@drawable/rectangleputih"
-        android:contentDescription="Back"
+        android:contentDescription="@string/back"
         android:src="@drawable/baseline_arrow_back_24"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
