@@ -23,7 +23,7 @@ class RoleProfile_Activity : AppCompatActivity() {
 
         val btnNavigate = findViewById<Button>(R.id.button)
         btnNavigate.setOnClickListener {
-            val intent = Intent(this, Paket_course::class.java)
+            val intent = Intent(this, paket_course::class.java)
             startActivity(intent)
         }
     }
