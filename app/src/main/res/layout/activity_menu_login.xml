@@ -19,14 +19,15 @@
         app:boxBackgroundMode="filled"
         app:layout_constraintTop_toBottomOf="@id/imageLogin"
         tools:ignore="MissingConstraints">
+
         <EditText
             android:id="@+id/isiEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/grey"
             android:fontFamily="@font/poppins"
             android:hint="@string/masukkan_email"
             android:inputType="textEmailAddress"
-            android:background="@color/grey"
             android:textColorHint="@color/white"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>

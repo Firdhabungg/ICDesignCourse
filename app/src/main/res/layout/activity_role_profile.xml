@@ -8,7 +8,6 @@
     android:id="@+id/main"
     android:layout_height="match_parent"
     tools:context=".RoleProfile_Activity">
-
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
@@ -27,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="24dp"
-        android:text="Username"
+        android:text="@string/username"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:textColor="@color/black"
@@ -61,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="24dp"
-        android:text="E-mail"
+        android:text="@string/e_mail"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:textColor="@color/black"
@@ -78,7 +77,7 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/rectangle_ungu"
         android:fontFamily="@font/poppins"
-        android:hint="icdesign@gmail.com"
+        android:hint="@string/icdesign_gmail_com"
         android:paddingStart="10dp"
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
@@ -161,7 +160,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="24dp"
-        android:text="Level"
+        android:text="@string/level"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:textColor="@color/black"
