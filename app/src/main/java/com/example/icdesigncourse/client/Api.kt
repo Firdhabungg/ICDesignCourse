@@ -10,7 +10,7 @@ import retrofit2.http.POST
 
 interface Api {
     @GET("Paket")
-    fun getPaketPembelian(): Call<ArrayList<PaketResponse>>
+    fun getPaket(): Call<ArrayList<PaketResponse>>
 
     @FormUrlEncoded
     @POST("Akun")

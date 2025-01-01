@@ -53,7 +53,7 @@ class MenuLogin : AppCompatActivity() {
                     ) {
                         val akun = response.body()
                         if(akun?.success == true) {
-                            val intentLogin = Intent(this@MenuLogin, RoleProfile_Activity::class.java)
+                            val intentLogin = Intent(this@MenuLogin, Paket_course::class.java)
                             intentLogin.putExtra("username", username)
                             intentLogin.putExtra("password", pwd)
                             if(username.isNotEmpty() && pwd.isNotEmpty()){

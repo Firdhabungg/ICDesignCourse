@@ -32,7 +32,7 @@ class RoleProfile_Activity : AppCompatActivity() {
         txtEmail.text = email
         txtPassword.text = password
 
-        val btnNavigate = findViewById<Button>(R.id.button)
+        val btnNavigate = findViewById<Button>(R.id.simpan)
         btnNavigate.setOnClickListener {
             val intent = Intent(this, Paket_course::class.java)
             startActivity(intent)
