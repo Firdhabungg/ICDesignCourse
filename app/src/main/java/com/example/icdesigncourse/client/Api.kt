@@ -9,8 +9,8 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 
 interface Api {
-    @GET("Paket")
-    fun getPaket(): Call<ArrayList<PaketResponse>>
+    @GET("Modul")
+    fun getModul(): Call<ArrayList<PaketResponse>>
 
     @FormUrlEncoded
     @POST("Akun")
