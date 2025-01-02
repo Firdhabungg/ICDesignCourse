@@ -28,7 +28,7 @@ class Paket_course : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val txtMenuBeranda:TextView = findViewById(R.id.txtMenuBeranda)
+        val txtMenuModul:TextView = findViewById(R.id.txtMenuModul)
         val txtMenuPembelian:TextView = findViewById(R.id.txtMenuPembelian)
         val txtMenuAkun:TextView = findViewById(R.id.txtMenuAkun)
         val fragmentContainer:FragmentContainerView = findViewById(R.id.fragmentContainerView)
@@ -37,8 +37,8 @@ class Paket_course : AppCompatActivity() {
             replaceFragment(PaketFragment())
         }
 
-        txtMenuBeranda.setOnClickListener{
-            replaceFragment(Beranda())
+        txtMenuModul.setOnClickListener{
+            replaceFragment(Modul())
         }
 
         txtMenuAkun.setOnClickListener{

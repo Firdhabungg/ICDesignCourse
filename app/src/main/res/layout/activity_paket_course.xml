@@ -28,11 +28,11 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
-            android:id="@+id/txtMenuBeranda"
+            android:id="@+id/txtMenuModul"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/beranda"
-            android:text="Beranda"
+            android:drawableTop="@drawable/modul"
+            android:text="Modul"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:padding="5dp"
@@ -51,7 +51,7 @@
             android:textColor="@color/white"
             android:padding="5dp"
             app:layout_constraintWidth_percent="0.33"
-            app:layout_constraintStart_toEndOf="@id/txtMenuBeranda"
+            app:layout_constraintStart_toEndOf="@id/txtMenuModul"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
