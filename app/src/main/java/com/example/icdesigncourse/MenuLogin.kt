@@ -3,6 +3,7 @@ package com.example.icdesigncourse
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -52,8 +53,9 @@ class MenuLogin : AppCompatActivity() {
                         response: Response<LoginResponse>
                     ) {
                         val akun = response.body()
+                        Log.d("haha", akun.toString())
                         if(akun?.success == true) {
-                            val intentLogin = Intent(this@MenuLogin, Paket_course::class.java)
+                            val intentLogin = Intent(this@MenuLogin, Home_activity::class.java)
                             intentLogin.putExtra("username", username)
                             intentLogin.putExtra("password", pwd)
                             if(username.isNotEmpty() && pwd.isNotEmpty()){

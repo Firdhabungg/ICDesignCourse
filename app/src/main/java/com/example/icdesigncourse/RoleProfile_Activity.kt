@@ -8,7 +8,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 
 class RoleProfile_Activity : AppCompatActivity() {
 
@@ -34,7 +33,7 @@ class RoleProfile_Activity : AppCompatActivity() {
 
         val btnNavigate = findViewById<Button>(R.id.simpan)
         btnNavigate.setOnClickListener {
-            val intent = Intent(this, Paket_course::class.java)
+            val intent = Intent(this, Home_activity::class.java)
             startActivity(intent)
         }
     }

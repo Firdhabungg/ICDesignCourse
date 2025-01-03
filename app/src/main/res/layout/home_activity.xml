@@ -6,19 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9F9F9"
-    tools:context=".Paket_course"
+    tools:context=".Home_activity"
     tools:viewBindingIgnore="true">
 
     <!-- Fragment Container -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.example.icdesigncourse.PaketFragment"
+        android:name="com.example.icdesigncourse.ModulFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout="@layout/fragment_paket" />
+        tools:layout="@layout/fragment_modul" />
 
     <!-- Navigasi -->
     <androidx.constraintlayout.widget.ConstraintLayout
