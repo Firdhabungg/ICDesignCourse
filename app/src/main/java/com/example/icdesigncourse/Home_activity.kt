@@ -1,13 +1,9 @@
 package com.example.icdesigncourse
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentContainerView
 
@@ -38,23 +34,5 @@ class Home_activity : AppCompatActivity() {
         txtMenuAkun.setOnClickListener{
             replaceFragment(MenuAkun())
         }
-
-//        val txtBeginner = findViewById<TextView>(R.id.beginneerButton)
-//        txtBeginner.setOnClickListener {
-//            val intentBeginner = Intent(this@Home_activity, DetailPaketBeginner::class.java)
-//            startActivity(intentBeginner)
-//        }
-//
-//        val txtIntermediate = findViewById<TextView>(R.id.intermediateButton)
-//        txtIntermediate.setOnClickListener {
-//            val intentIntermediate = Intent(this@Home_activity, DetailPaketIntermediate::class.java)
-//            startActivity(intentIntermediate)
-//        }
-//
-//        val txtHighLevel = findViewById<TextView>(R.id.highLevelButton)
-//        txtHighLevel.setOnClickListener {
-//            val intentHighLevel = Intent(this@Home_activity, DetailPaketHigh::class.java)
-//            startActivity(intentHighLevel)
-//        }
     }
 }
