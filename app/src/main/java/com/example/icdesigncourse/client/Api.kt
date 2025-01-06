@@ -18,4 +18,9 @@ interface Api {
         @Field("username") username: String,
         @Field("password") password: String
     ): Call<LoginResponse>
+
+    @GET("Akun")
+    fun getAkun(
+        
+    )
 }
