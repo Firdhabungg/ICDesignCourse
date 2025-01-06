@@ -1,5 +1,6 @@
 package com.example.icdesigncourse.client
 
+import com.example.icdesigncourse.response.account.AkunResponse
 import com.example.icdesigncourse.response.account.RegisterResponse
 import com.example.icdesigncourse.response.akun.LoginResponse
 import com.example.icdesigncourse.response.modul.ModulResponse
@@ -8,6 +9,7 @@ import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.Query
 
 interface Api {
     @GET("Modul")
@@ -25,6 +27,11 @@ interface Api {
     fun register(
         @Field("username") username: String,
         @Field("password") password: String,
-        @Field("nama_lengkap") namaLengkap: String,
+        @Field("nama_lengkap") namaLengkap: String
     ): Call<RegisterResponse>
+
+    @GET("Akun")
+    fun getAkun(
+        @Query("username") username: String
+    ): Call<AkunResponse>
 }

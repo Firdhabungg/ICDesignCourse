@@ -1,5 +1,6 @@
 package com.example.icdesigncourse
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -58,6 +59,10 @@ class MenuLogin : AppCompatActivity() {
                             val intentLogin = Intent(this@MenuLogin, Home_activity::class.java)
                             intentLogin.putExtra("username", username)
                             intentLogin.putExtra("password", pwd)
+                            val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+                            val editor = sharedPreferences.edit()
+                            editor.putString("username", username)  // Simpan username yang login
+                            editor.apply()
                             if(username.isNotEmpty() && pwd.isNotEmpty()){
                                 Toast.makeText(this@MenuLogin, akun.message.toString(), Toast.LENGTH_SHORT).show()
                                 startActivity(intentLogin)
