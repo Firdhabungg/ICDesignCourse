@@ -1,7 +1,11 @@
 package com.example.icdesigncourse.response.account
 
 data class RegisterResponse(
-    val username: String,
-    val password: String,
-    val nama_lengkap: String,
+    val success: Boolean,
+    val message: String,
+    val data: UserData?
+)
+
+data class UserData(
+    val username: String
 )

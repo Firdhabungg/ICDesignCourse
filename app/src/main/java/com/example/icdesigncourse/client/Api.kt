@@ -23,7 +23,7 @@ interface Api {
     ): Call<LoginResponse>
 
     @FormUrlEncoded
-    @POST("Register")
+    @POST("Akun/register")
     fun register(
         @Field("username") username: String,
         @Field("password") password: String,
