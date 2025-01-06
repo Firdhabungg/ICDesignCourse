@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -56,6 +57,11 @@ class MenuRegister : AppCompatActivity() {
                 Toast.makeText(this, "Lengkapi registrasi anda", Toast.LENGTH_SHORT).show()
             }
         }
+        val txtMasuk = findViewById<TextView>(R.id.tanyaMasuk)
+        txtMasuk.setOnClickListener {
+            val intentMasuk = Intent(this, MenuLogin::class.java)
+            startActivity(intentMasuk)
+        }
     }
 
     private fun validateInputs(): Boolean {
@@ -68,7 +74,6 @@ class MenuRegister : AppCompatActivity() {
         val api = RetrofitClient.instance
         val registerCall = api.register(
             txtUsername.text.toString(),
-            txtEmail.text.toString(),
             txtPassword.text.toString(),
             txtNamaLengkap.text.toString()
         )

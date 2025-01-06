@@ -24,7 +24,6 @@ interface Api {
     @POST("Register")
     fun register(
         @Field("username") username: String,
-        @Field("email") email: String,
         @Field("password") password: String,
         @Field("nama_lengkap") namaLengkap: String,
     ): Call<RegisterResponse>
