@@ -1,7 +1,7 @@
 package com.example.icdesigncourse.client
 
 import com.example.icdesigncourse.response.akun.LoginResponse
-import com.example.icdesigncourse.response.paket.PaketResponse
+import com.example.icdesigncourse.response.modul.ModulResponse
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
@@ -10,7 +10,7 @@ import retrofit2.http.POST
 
 interface Api {
     @GET("Modul")
-    fun getModul(): Call<ArrayList<PaketResponse>>
+    fun getModul(): Call<ArrayList<ModulResponse>>
 
     @FormUrlEncoded
     @POST("Akun")
