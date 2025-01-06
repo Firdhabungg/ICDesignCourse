@@ -43,6 +43,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.play.services.base)
+    implementation(libs.androidx.tools.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -53,5 +54,6 @@ dependencies {
     implementation ("com.squareup.retrofit2:retrofit:2.11.0") //connect web service
     implementation ("com.squareup.retrofit2:converter-gson:2.11.0") //membaca data gson
     implementation ("com.squareup.picasso:picasso:2.8") //library untuk gambar
+    implementation ("com.android.volley:volley:1.2.1")
 
 }

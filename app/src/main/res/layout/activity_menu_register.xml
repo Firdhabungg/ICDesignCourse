@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editEmailR" />
 
     <EditText
-        android:id="@+id/editNamaR"
+        android:id="@+id/editTextNamaLengkap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -91,9 +91,9 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNamaR" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNamaLengkap" />
     <EditText
-        android:id="@+id/editSandiR"
+        android:id="@+id/editTextPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -132,7 +132,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSandiR" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPass" />
 
     <TextView
         android:id="@+id/textAtauR"

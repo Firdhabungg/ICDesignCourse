@@ -1,5 +1,6 @@
 package com.example.icdesigncourse.client
 
+import com.example.icdesigncourse.response.account.RegisterResponse
 import com.example.icdesigncourse.response.akun.LoginResponse
 import com.example.icdesigncourse.response.modul.ModulResponse
 import retrofit2.Call
@@ -18,4 +19,13 @@ interface Api {
         @Field("username") username: String,
         @Field("password") password: String
     ): Call<LoginResponse>
+
+    @FormUrlEncoded
+    @POST("Register")
+    fun register(
+        @Field("username") username: String,
+        @Field("email") email: String,
+        @Field("password") password: String,
+        @Field("nama_lengkap") namaLengkap: String,
+    ): Call<RegisterResponse>
 }
