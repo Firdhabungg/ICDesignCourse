@@ -185,13 +185,13 @@
             />
 
         <TextView
-            android:id="@+id/level"
+            android:id="@+id/paket"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="40dp"
             android:fontFamily="@font/poppins"
-            android:text="Level"
+            android:text="Kelas Paket"
             android:textSize="16sp"
             android:paddingTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -205,7 +205,7 @@
             android:fontFamily="@font/poppins"
             android:padding="12dp"
             android:textSize="15sp"
-            android:hint="level"
+            android:hint="Kelas Paket"
             android:textColorHint="@color/white"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/DetailPaketBeginner1"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -191,7 +192,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/btn_back"
+        android:id="@+id/btnBack"
         android:layout_width="29dp"
         android:layout_height="31dp"
         android:layout_margin="16dp"
