@@ -47,9 +47,7 @@ class MenuRegister : AppCompatActivity() {
     }
 
     private fun validateInputs(): Boolean {
-        return txtUsername.text.isNotEmpty() &&
-                txtPassword.text.isNotEmpty() &&
-                txtNamaLengkap.text.isNotEmpty()
+        return txtUsername.text.isNotEmpty() && txtPassword.text.isNotEmpty() && txtNamaLengkap.text.isNotEmpty()
     }
 
     private fun registerUser() {
