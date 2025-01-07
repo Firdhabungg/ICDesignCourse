@@ -12,16 +12,19 @@ import retrofit2.http.POST
 import retrofit2.http.Query
 
 interface Api {
-    @GET("Modul")
-    fun getModul(): Call<ArrayList<ModulResponse>>
-
+    // tampilkan akun berdasarkan username
+    @GET("Akun")
+    fun getAkun(
+        @Query("username") username: String
+    ): Call<AkunResponse>
+    // Login
     @FormUrlEncoded
     @POST("Akun")
     fun login(
         @Field("username") username: String,
         @Field("password") password: String
     ): Call<LoginResponse>
-
+//    registrasi
     @FormUrlEncoded
     @POST("Akun/register")
     fun register(
@@ -29,9 +32,8 @@ interface Api {
         @Field("password") password: String,
         @Field("nama_lengkap") namaLengkap: String
     ): Call<RegisterResponse>
+//    tampilkan modul
+    @GET("Modul")
+    fun getModul(): Call<ArrayList<ModulResponse>>
 
-    @GET("Akun")
-    fun getAkun(
-        @Query("username") username: String
-    ): Call<AkunResponse>
 }

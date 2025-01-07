@@ -27,9 +27,9 @@ class MenuRegister : AppCompatActivity() {
     }
 
     private fun initializeViews() {
-        txtUsername = findViewById(R.id.editEmailR)
-        txtPassword = findViewById(R.id.editTextPass)
-        txtNamaLengkap = findViewById(R.id.editTextNamaLengkap)
+        txtUsername = findViewById(R.id.editTextUsernameRegis)
+        txtNamaLengkap = findViewById(R.id.editTextNamaLengkapRegis)
+        txtPassword = findViewById(R.id.editTextPassRegis)
         btnDaftar = findViewById(R.id.buttonDaftar)
     }
 

@@ -31,7 +31,7 @@ class MenuLogin : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val txtUsername = findViewById<EditText>(R.id.isiEmail)
+        val txtUsername = findViewById<EditText>(R.id.editTextUsername)
         val txtPassword = findViewById<EditText>(R.id.isiPassword)
         val btnLogin = findViewById<Button>(R.id.btnMasuk)
         btnLogin.setOnClickListener {
