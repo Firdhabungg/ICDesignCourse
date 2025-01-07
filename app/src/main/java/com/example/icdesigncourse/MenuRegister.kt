@@ -16,6 +16,7 @@ class MenuRegister : AppCompatActivity() {
     private lateinit var txtUsername: EditText
     private lateinit var txtPassword: EditText
     private lateinit var txtNamaLengkap: EditText
+    private lateinit var txtEmail: EditText
     private lateinit var btnDaftar: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +31,7 @@ class MenuRegister : AppCompatActivity() {
         txtUsername = findViewById(R.id.editTextUsernameRegis)
         txtNamaLengkap = findViewById(R.id.editTextNamaLengkapRegis)
         txtPassword = findViewById(R.id.editTextPassRegis)
+        txtEmail = findViewById(R.id.editTextEmailRegis)
         btnDaftar = findViewById(R.id.buttonDaftar)
     }
 
@@ -47,16 +49,17 @@ class MenuRegister : AppCompatActivity() {
     }
 
     private fun validateInputs(): Boolean {
-        return txtUsername.text.isNotEmpty() && txtPassword.text.isNotEmpty() && txtNamaLengkap.text.isNotEmpty()
+        return txtUsername.text.isNotEmpty() && txtPassword.text.isNotEmpty() && txtNamaLengkap.text.isNotEmpty() && txtEmail.text.isNotEmpty()
     }
 
     private fun registerUser() {
         val username = txtUsername.text.toString()
         val password = txtPassword.text.toString()
         val namaLengkap = txtNamaLengkap.text.toString()
+        val email = txtEmail.text.toString()
 
         val api = RetrofitClient.instance
-        api.register(username, password, namaLengkap)
+        api.register(username, password, namaLengkap, email)
             .enqueue(object : Callback<RegisterResponse> {
                 override fun onResponse(call: Call<RegisterResponse>, response: Response<RegisterResponse>) {
                     if (response.isSuccessful) {

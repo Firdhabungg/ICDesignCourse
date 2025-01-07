@@ -30,7 +30,8 @@ interface Api {
     fun register(
         @Field("username") username: String,
         @Field("password") password: String,
-        @Field("nama_lengkap") namaLengkap: String
+        @Field("nama_lengkap") namaLengkap: String,
+        @Field("email") email: String
     ): Call<RegisterResponse>
 //    tampilkan modul
     @GET("Modul")
