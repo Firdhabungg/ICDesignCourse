@@ -40,7 +40,7 @@ class MenuRegister : AppCompatActivity() {
             if (validateInputs()) {
                 registerUser()
             } else {
-                Toast.makeText(this, "Lengkapi registrasi Anda", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Lengkapi data registrasi Anda", Toast.LENGTH_SHORT).show()
             }
         }
         findViewById<TextView>(R.id.tanyaMasuk).setOnClickListener {
