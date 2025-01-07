@@ -19,10 +19,15 @@ class DetailPaketBeginner : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val btnBack = findViewById<ImageView>(R.id.btnBack)
+        val btnBack = findViewById<ImageView>(R.id.btnBackBeginner)
         btnBack.setOnClickListener {
-            val intentLogin = Intent(this, Home_activity::class.java)
-            startActivity(intentLogin)
+            val intentBack = Intent(this, Home_activity::class.java)
+            startActivity(intentBack)
+        }
+        val btnBuyPaket = findViewById<Button>(R.id.btn_buyPaket)
+        btnBuyPaket.setOnClickListener {
+            val intenBuyPaket = Intent(this, MetodePembayaran::class.java)
+            startActivity(intenBuyPaket)
         }
     }
 }

@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".DetailPaketBeginner"
     android:background="#F5F5F5">
 
     <!-- Header -->
@@ -180,7 +181,7 @@
             </LinearLayout>
 
           <Button
-                android:id="@+id/btn_buy"
+                android:id="@+id/btn_buyPaket"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -192,11 +193,10 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/btnBack"
+        android:id="@+id/btnBackBeginner"
         android:layout_width="29dp"
         android:layout_height="31dp"
         android:layout_margin="16dp"
-        android:background="@drawable/rectangleputih"
         android:contentDescription="@string/back"
         android:src="@drawable/baseline_arrow_back_24"
         tools:layout_editor_absoluteX="16dp"

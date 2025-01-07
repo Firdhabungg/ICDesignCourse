@@ -2,6 +2,7 @@ package com.example.icdesigncourse
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -19,10 +20,16 @@ class DetailPaketIntermediate : AppCompatActivity() {
             insets
         }
 
-        val btnBack = findViewById<ImageView>(R.id.btnBack)
+        val btnBack = findViewById<ImageView>(R.id.btnBackIntermediate)
         btnBack.setOnClickListener {
-            val intentLogin = Intent(this, Home_activity::class.java)
-            startActivity(intentLogin)
+            val intentBack = Intent(this, Home_activity::class.java)
+            startActivity(intentBack)
         }
+        val btnBuy = findViewById<Button>(R.id.btn_buyPaketIntermediate)
+        btnBuy.setOnClickListener {
+            val intentBuy = Intent(this, MetodePembayaran::class.java)
+            startActivity(intentBuy)
+        }
+
     }
 }

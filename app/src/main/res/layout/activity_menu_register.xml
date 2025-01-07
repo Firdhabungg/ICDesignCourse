@@ -92,28 +92,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNamaLengkapRegis" />
-    <EditText
-        android:id="@+id/editTextPassRegis"
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPasswordRegistrasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/rectangle_ungu"
-        android:drawableEnd="@drawable/baseline_visibility_off_24"
-        android:fontFamily="@font/poppins"
-        android:hint="@string/kata_sandi"
-        android:paddingStart="15dp"
-        android:paddingTop="15dp"
-        android:paddingEnd="20dp"
-        android:paddingBottom="15dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textSize="14sp"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textSandiR" />
+        app:passwordToggleTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/textSandiR"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/editTextPassRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/rectangle_ungu"
+            android:drawableEnd="@drawable/baseline_visibility_off_24"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSandiR" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <TextView
         android:id="@+id/textEmail"
@@ -127,7 +138,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassRegis" />
+        app:layout_constraintTop_toBottomOf="@+id/layoutPasswordRegistrasi" />
     <EditText
         android:id="@+id/editTextEmailRegis"
         android:layout_width="match_parent"

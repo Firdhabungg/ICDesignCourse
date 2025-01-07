@@ -92,4 +92,13 @@
     <string name="nama_lengkap">Nama Lengkap</string>
     <string name="kelas_paket">Kelas Paket</string>
     <string name="keluar">Keluar</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="kartu_kredit">Kartu Kredit</string>
+    <string name="transfer_bank">Transfer Bank</string>
+    <string name="total_pembayaran">Total Pembayaran</string>
+    <string name="rp_800_000">Rp. 800.000</string>
+    <string name="rp_200_000">Rp. 200.000</string>
+    <string name="promo_ramadhan_disc_20">Promo Ramadhan Disc 20%</string>
+    <string name="high_level_paket_belajar">High Level - Paket belajar desain ui/ux ( Gratis rangkuman dan akses modul class selama 1 tahun )</string>
+    <string name="back_button">Back Button</string>
 </resources>

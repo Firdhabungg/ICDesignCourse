@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".DetailPaketHigh"
     android:background="#F5F5F5">
 
     <!-- Header -->
@@ -24,11 +25,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
     <ImageView
-        android:id="@+id/btn_back"
+        android:id="@+id/btnBackHighLevel"
         android:layout_width="29dp"
         android:layout_height="31dp"
         android:layout_margin="16dp"
-        android:background="@drawable/rectangleputih"
         android:contentDescription="@string/back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -207,7 +207,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_buy"
+                android:id="@+id/btn_buyPaketSekarang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -216,17 +216,5 @@
                 android:textColor="#FFFFFF" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-    <ImageView
-        android:id="@+id/btnBack"
-        android:layout_width="29dp"
-        android:layout_height="31dp"
-        android:layout_margin="16dp"
-        android:background="@drawable/rectangleputih"
-        android:contentDescription="@string/back"
-        android:src="@drawable/baseline_arrow_back_24"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
