@@ -88,4 +88,8 @@
     <string name="shin_tae_yong">Shin Tae Yong</string>
     <string name="shintaeyong_gmail_com">shintaeyong@gmail.com</string>
     <string name="login">login</string>
+    <string name="akun">Akun</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="kelas_paket">Kelas Paket</string>
+    <string name="keluar">Keluar</string>
 </resources>
