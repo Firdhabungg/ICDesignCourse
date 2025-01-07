@@ -170,24 +170,33 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView"
             tools:ignore="MissingConstraints" />
 
-        <EditText
-            android:id="@+id/isiPass"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:padding="12dp"
-            android:textSize="14sp"
-            android:textColor="@color/white"
-            android:hint="Kata Sandi"
-            android:textColorHint="@color/white"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/softpurple"
-            android:background="@drawable/rectangle_ungu"
-            app:layout_constraintTop_toBottomOf="@+id/textemail"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
+            app:passwordToggleTint="@color/white"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/isiPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/softpurple"
+                android:background="@drawable/rectangle_ungu"
+                app:layout_constraintTop_toBottomOf="@+id/textemail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <TextView
             android:id="@+id/paket1"
