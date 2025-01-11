@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#FFFFFF">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/header"
@@ -56,72 +56,6 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/textusername"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="40dp"
-            android:fontFamily="@font/poppins"
-            android:text="Username"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
-
-        <EditText
-            android:id="@+id/isiUsername"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:padding="12dp"
-            android:textSize="14sp"
-            android:hint="@string/username"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/softpurple"
-            android:background="@drawable/rectangle_ungu"
-            app:layout_constraintTop_toBottomOf="@+id/textusername"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
-
-        <TextView
-            android:id="@+id/textemail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="40dp"
-            android:fontFamily="@font/poppins"
-            android:text="Email"
-            android:textSize="16sp"
-            android:paddingTop="5dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:ignore="MissingConstraints" />
-
-        <EditText
-            android:id="@+id/isiEmail1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:padding="12dp"
-            android:textSize="14sp"
-            android:textColor="@color/white"
-            android:hint="@string/icdesign_gmail_com"
-            android:textColorHint="@color/white"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/softpurple"
-            android:background="@drawable/rectangle_ungu"
-            app:layout_constraintTop_toBottomOf="@+id/textemail"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
-
-        <TextView
             android:id="@+id/textnamaLengkap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -145,6 +79,38 @@
             android:textSize="14sp"
             android:hint="@string/nama_lengkap"
             android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/softpurple"
+            android:background="@drawable/rectangle_ungu"
+            app:layout_constraintTop_toBottomOf="@+id/textemail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            android:id="@+id/textemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/e_mail"
+            android:textSize="16sp"
+            android:paddingTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/isiEmail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:hint="@string/icdesign_gmail_com"
             android:textColorHint="@color/white"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"

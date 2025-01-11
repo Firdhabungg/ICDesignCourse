@@ -48,7 +48,7 @@ class MenuAkun : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val txtUsername = view.findViewById<EditText>(R.id.isiUsername)
+        val txtUserProfile = view.findViewById<TextView>(R.id.profile_name)
         val txtEmail = view.findViewById<EditText>(R.id.isiEmail1)
         val txtPass = view.findViewById<EditText>(R.id.isiPass)
         val txtNamaLengkap = view.findViewById<EditText>(R.id.isiNamaLengkap)
@@ -63,7 +63,7 @@ class MenuAkun : Fragment() {
                 override fun onResponse(call: Call<AkunResponse>, response: Response<AkunResponse>) {
                     if (response.isSuccessful) {
                         val data = response.body()
-                        txtUsername.setText(data?.username)
+                        txtUserProfile.setText(data?.username)
                         txtEmail.setText(data?.email)
                         txtPass.setText(data?.password)
                         txtNamaLengkap.setText(data?.nama_lengkap)

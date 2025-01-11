@@ -16,7 +16,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="24dp"
-        app:boxBackgroundMode="filled"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/softpurple"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="3dp"
         app:layout_constraintTop_toBottomOf="@id/imageLogin"
         tools:ignore="MissingConstraints">
 
@@ -24,11 +27,11 @@
             android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/grey"
             android:fontFamily="@font/poppins"
             android:hint="@string/username"
+            android:backgroundTint="@color/white"
             android:inputType="textEmailAddress"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/softpurple"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -40,7 +43,10 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/layoutEmail"
-        app:boxBackgroundMode="filled"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeColor="@color/softpurple"
+        app:boxStrokeWidthFocused="3dp"
         app:passwordToggleEnabled="true"
         tools:ignore="MissingConstraints">
 
@@ -50,30 +56,37 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:hint="@string/kata_sandi"
+            android:backgroundTint="@color/white"
             android:inputType="textPassword"
-            android:background="@color/grey"
             android:textSize="14sp"
             tools:ignore="Autofill" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btnMasuk"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutBtnMasuk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/softpurple"
-        android:fontFamily="@font/poppins"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:text="@string/masuk"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutPassword"/>
+        app:layout_constraintTop_toBottomOf="@id/layoutPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp">
+        <Button
+            android:id="@+id/btnMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/softpurple"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/masuk"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 
 
@@ -87,7 +100,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnMasuk"
+        app:layout_constraintTop_toBottomOf="@id/layoutBtnMasuk"
         tools:ignore="MissingConstraints" />
 
 
