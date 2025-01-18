@@ -5,5 +5,6 @@ data class ModulResponse(
     val nama_modul : String,
     val deskripsi_modul : String,
     val gambar_modul : String,
-    val kelas_paket : String
+    val kelas_paket : String,
+    val materi : String
 )

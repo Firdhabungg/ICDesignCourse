@@ -6,7 +6,7 @@
     android:layout_margin="8dp"
     app:cardCornerRadius="24dp"
     app:cardElevation="5dp"
-    android:id="@+id/cardModul">
+    android:id="@+id/cardDetailModul">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,6 +24,20 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
+            android:id="@+id/namaModul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Konsep UI UX"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/deskripsiDetailModul"
+            app:layout_constraintStart_toEndOf="@id/imageModul1"
+            />
+        <TextView
+            android:id="@+id/deskripsiDetailModul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
