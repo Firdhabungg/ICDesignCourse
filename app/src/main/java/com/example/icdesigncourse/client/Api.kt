@@ -36,5 +36,10 @@ interface Api {
 //    tampilkan modul
     @GET("Modul")
     fun getModul(): Call<ArrayList<ModulResponse>>
+// tampil modul by id
+    @GET("Modul")
+    fun getModulById(
+        @Query("id_modul") idModul: String
+    ): Call<ArrayList<ModulResponse>>
 
 }

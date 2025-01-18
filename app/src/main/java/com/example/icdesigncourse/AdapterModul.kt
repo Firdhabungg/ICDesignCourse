@@ -14,8 +14,10 @@ import com.example.icdesigncourse.client.RetrofitClient
 import com.example.icdesigncourse.response.modul.ModulResponse
 import com.squareup.picasso.Picasso
 
-class AdapterModul (private val listModul: ArrayList<ModulResponse>) :
+class AdapterModul(private var listModul: ArrayList<ModulResponse>) :
     RecyclerView.Adapter<AdapterModul.ModulViewHolder>() {
+
+    private var originalList = ArrayList<ModulResponse>(listModul)
 
     inner class ModulViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val txtIdModul: TextView = itemView.findViewById(R.id.textidModul)
@@ -25,30 +27,57 @@ class AdapterModul (private val listModul: ArrayList<ModulResponse>) :
         val context: Context? = itemView.context
 
         fun bind(response: ModulResponse) {
-            val idModul:String = "${response.id_modul}"
-            val namaModul = "${response.nama_modul}"
-            val picture = "${response.gambar_modul}"
+            val idModul = response.id_modul
+            val namaModul = response.nama_modul
+            val picture = response.gambar_modul
+            val deskripsi = response.deskripsi_modul
+            val materi = response.materi
 
             txtIdModul.text = idModul
             textNamaModul.text = namaModul
+
             val url = RetrofitClient.url + picture
             Picasso.get().load(url).into(imageModul)
 
             cardModul.setOnClickListener {
-                val intentDetailModul = Intent(context, Detail_Modul::class.java)
-                intentDetailModul.putExtra("idModul", idModul)
-                intentDetailModul.putExtra("namaModul", namaModul)
-                intentDetailModul.putExtra("picture", picture)
+                val intentDetailModul = Intent(context, Detail_Modul::class.java).apply {
+                    putExtra("idModul", idModul)
+                    putExtra("namaModul", namaModul)
+                    putExtra("picture", picture)
+                    putExtra("deskripsi", deskripsi)
+                    putExtra("materi", materi)
+                }
                 context?.startActivity(intentDetailModul)
             }
-
         }
     }
 
+    // Fungsi untuk memfilter modul berdasarkan ID
+    fun filterById(id: String) {
+        listModul.clear()
+        if (id.isEmpty()) {
+            listModul.addAll(originalList)
+        } else {
+            val filteredList = originalList.filter { modul ->
+                modul.id_modul.contains(id, ignoreCase = true)
+            }
+            listModul.addAll(filteredList)
+        }
+        notifyDataSetChanged()
+    }
+
+    // Fungsi untuk memperbarui data
+    fun updateData(newList: ArrayList<ModulResponse>) {
+        originalList = ArrayList(newList)
+        listModul.clear()
+        listModul.addAll(newList)
+        notifyDataSetChanged()
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ModulViewHolder {
-        val view = LayoutInflater.from(parent?.context)
-        val cellForRow = view.inflate(R.layout.card_layout_modul, parent, false)
-        return ModulViewHolder(cellForRow)
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.card_layout_modul, parent, false)
+        return ModulViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ModulViewHolder, position: Int) {
@@ -56,6 +85,6 @@ class AdapterModul (private val listModul: ArrayList<ModulResponse>) :
     }
 
     override fun getItemCount(): Int {
-       return listModul.size
+        return listModul.size
     }
 }
