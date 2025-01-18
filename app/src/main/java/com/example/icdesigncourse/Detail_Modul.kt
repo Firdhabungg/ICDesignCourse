@@ -1,5 +1,6 @@
 package com.example.icdesigncourse
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
@@ -47,7 +48,8 @@ class Detail_Modul : AppCompatActivity() {
 
     private fun setupBackButton() {
         backButton.setOnClickListener {
-            finish()
+            val intentBack = Intent(this, Home_activity::class.java)
+            startActivity(intentBack)
         }
     }
 

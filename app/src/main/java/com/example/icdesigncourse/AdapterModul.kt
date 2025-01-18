@@ -17,8 +17,6 @@ import com.squareup.picasso.Picasso
 class AdapterModul(private var listModul: ArrayList<ModulResponse>) :
     RecyclerView.Adapter<AdapterModul.ModulViewHolder>() {
 
-    private var originalList = ArrayList<ModulResponse>(listModul)
-
     inner class ModulViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val txtIdModul: TextView = itemView.findViewById(R.id.textidModul)
         val textNamaModul: TextView = itemView.findViewById(R.id.textNamaModul)
@@ -51,29 +49,7 @@ class AdapterModul(private var listModul: ArrayList<ModulResponse>) :
             }
         }
     }
-
-    // Fungsi untuk memfilter modul berdasarkan ID
-    fun filterById(id: String) {
-        listModul.clear()
-        if (id.isEmpty()) {
-            listModul.addAll(originalList)
-        } else {
-            val filteredList = originalList.filter { modul ->
-                modul.id_modul.contains(id, ignoreCase = true)
-            }
-            listModul.addAll(filteredList)
-        }
-        notifyDataSetChanged()
-    }
-
-    // Fungsi untuk memperbarui data
-    fun updateData(newList: ArrayList<ModulResponse>) {
-        originalList = ArrayList(newList)
-        listModul.clear()
-        listModul.addAll(newList)
-        notifyDataSetChanged()
-    }
-
+    
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ModulViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.card_layout_modul, parent, false)
