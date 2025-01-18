@@ -101,4 +101,6 @@
     <string name="promo_ramadhan_disc_20">Promo Ramadhan Disc 20%</string>
     <string name="high_level_paket_belajar">High Level - Paket belajar desain ui/ux ( Gratis rangkuman dan akses modul class selama 1 tahun )</string>
     <string name="back_button">Back Button</string>
+    <string name="konsep_ui_ux">Konsep UI UX</string>
+    <string name="modul">Modul</string>
 </resources>

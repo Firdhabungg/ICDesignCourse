@@ -54,7 +54,6 @@ class MenuLogin : AppCompatActivity() {
                         response: Response<LoginResponse>
                     ) {
                         val akun = response.body()
-                        Log.d("haha", akun.toString())
                         if(akun?.success == true) {
                             val intentLogin = Intent(this@MenuLogin, Home_activity::class.java)
                             intentLogin.putExtra("username", username)

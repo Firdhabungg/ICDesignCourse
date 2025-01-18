@@ -16,5 +16,6 @@ class Detail_Modul : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        print("ini detail modul")
     }
 }

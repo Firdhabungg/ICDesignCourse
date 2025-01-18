@@ -1,6 +1,7 @@
 package com.example.icdesigncourse
 
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -17,10 +18,10 @@ class AdapterModul (private val listModul: ArrayList<ModulResponse>) :
     RecyclerView.Adapter<AdapterModul.ModulViewHolder>() {
 
     inner class ModulViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val idModul: TextView = itemView.findViewById(R.id.textidModul)
+        val txtIdModul: TextView = itemView.findViewById(R.id.textidModul)
+        val textNamaModul: TextView = itemView.findViewById(R.id.textNamaModul)
+        val imageModul: ImageView = itemView.findViewById(R.id.imageModul)
         val cardModul: CardView = itemView.findViewById(R.id.cardModul)
-        val imageModul: ImageView = itemView.findViewById(R.id.imageModul1)
-        val textModul: TextView = itemView.findViewById(R.id.textModul)
         val context: Context? = itemView.context
 
         fun bind(response: ModulResponse) {
@@ -28,30 +29,33 @@ class AdapterModul (private val listModul: ArrayList<ModulResponse>) :
             val namaModul = "${response.nama_modul}"
             val picture = "${response.gambar_modul}"
 
-
-            textModul.text = namaModul
+            txtIdModul.text = idModul
+            textNamaModul.text = namaModul
             val url = RetrofitClient.url + picture
             Picasso.get().load(url).into(imageModul)
+
+            cardModul.setOnClickListener {
+                val intentDetailModul = Intent(context, Detail_Modul::class.java)
+                intentDetailModul.putExtra("idModul", idModul)
+                intentDetailModul.putExtra("namaModul", namaModul)
+                intentDetailModul.putExtra("picture", picture)
+                context?.startActivity(intentDetailModul)
+            }
+
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ModulViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.card_layout_modul, parent, false)
-        return ModulViewHolder(view)
+        val view = LayoutInflater.from(parent?.context)
+        val cellForRow = view.inflate(R.layout.card_layout_modul, parent, false)
+        return ModulViewHolder(cellForRow)
     }
 
     override fun onBindViewHolder(holder: ModulViewHolder, position: Int) {
-        val modul = listModul[position]
-
-        holder.apply {
-            bind(modul) // Gunakan metode bind yang sudah dibuat
-            cardModul.setOnClickListener {
-                // Tambahkan aksi yang diinginkan saat card diklik
-                Log.d("AdapterModul", "Clicked on Modul: ${modul.nama_modul}")
-            }
-        }
+        holder.bind(listModul[position])
     }
 
-    override fun getItemCount(): Int = listModul.size
+    override fun getItemCount(): Int {
+       return listModul.size
+    }
 }
